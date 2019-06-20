@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "64049246518",
+    "firebase_url": "https://notes-70876.firebaseio.com",
+    "project_id": "notes-70876",
+    "storage_bucket": "notes-70876.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64049246518:android:18ab4dea344997cd",
+        "android_client_info": {
+          "package_name": "com.vivekkekuda.take_notes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64049246518-qq3jmci479rp6nc9mam1u26cfe6gs515.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vivekkekuda.take_notes",
+            "certificate_hash": "88036dd19645898b70cc15cd4b38f0438ed404c7"
+          }
+        },
+        {
+          "client_id": "64049246518-m4l5teojn2nj1tl6j6etak6vbi4qgp7p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo4GMIgql-a46CtXHAgbNZtY24eq9llaw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "64049246518-m4l5teojn2nj1tl6j6etak6vbi4qgp7p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "64049246518-ct7qfmkf240f68kuac4ngg5u3v84nroq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vivekkekuda.takeNotes"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
