@@ -1,0 +1,1 @@
+enum NotesState {NoDataAvailable, Fetching, DataFetched}

@@ -1,0 +1,1 @@
+enum ThemeState {Fresh, Lime, Blue, Dark, Black}
