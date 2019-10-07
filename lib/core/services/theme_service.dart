@@ -34,7 +34,7 @@ class ThemeService {
     }
     else {
       FlutterStatusbarcolor.setStatusBarWhiteForeground(false);
-      FlutterStatusbarcolor.setNavigationBarWhiteForeground(true);
+      FlutterStatusbarcolor.setNavigationBarWhiteForeground(false);
     }
   }
 

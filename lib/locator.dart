@@ -18,7 +18,7 @@ Future setupLocator() async {
 
   locator.registerLazySingleton(() => AuthenticationService());
 
-  locator.registerSingleton(FirestoreService());
+  locator.registerFactory(() => FirestoreService());
 
   locator.registerLazySingleton(() => ThemeService());
 

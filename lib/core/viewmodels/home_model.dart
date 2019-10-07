@@ -33,6 +33,7 @@ class HomeModel extends ChangeNotifier {
   @override
   void dispose() {
     _firestoreService.noteController.close();
+    _firestoreService.notes.listen(_onNotesUpdated).cancel();
     print('closed.');
     super.dispose();
   }

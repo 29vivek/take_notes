@@ -12,7 +12,6 @@ class FirestoreService {
   Firestore _firestore = Firestore.instance;
   StreamController<List<Note>> noteController = StreamController<List<Note>>();
 
-
   FirestoreService() {
     print('creating firestore service');
 
@@ -45,4 +44,20 @@ class FirestoreService {
     return notes;
   }
 
+  void updateData(Note note) {
+    _firestore.collection('notes').document(note.docId).updateData({'title': note.title, 'body': note.body});
+  }
+  
+  void addDoc(String title, String body) {
+    _authenticationService.getUser.then((user) {
+      DocumentReference ref = _firestore.collection('notes').document();
+      Note note = Note(title: title, body: body, docId: ref.documentID, userUid: user.uid);
+      _firestore.collection('notes').document(ref.documentID).setData(note.toMap());
+    });
+    
+  }
+
+  Future<void> deleteNote(Note note) async {
+    await _firestore.collection('notes').document(note.docId).delete();
+  }
 }

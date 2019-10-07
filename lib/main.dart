@@ -13,6 +13,7 @@ Future<void> main(List<String> args) async {
     runApp(MyApp());
   } catch(error) {
     print('locator setup has failed.');
+    print(error);
   }
 }
 

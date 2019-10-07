@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class Note {
-  final String title;
-  final String body;
+  String title;
+  String body;
   final String userUid;
   final String docId;
 
@@ -22,4 +22,8 @@ class Note {
     title = snapshot['title'],
     userUid = snapshot['userUid'],
     docId = snapshot['docId'];
+
+  Map<String, dynamic> toMap() {
+    return {'title':title, 'body': body, 'userUid':userUid, 'docId':docId};
+  }
 }
